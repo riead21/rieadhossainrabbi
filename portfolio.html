@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Document</title>
+    <style>
+        :root{
+            --primary-color: white;
+            --secondary-color: black;
+        }
+        .dark-thame{
+            --primary-color: black;
+            --secondary-color: white;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            background-color: var(--secondary-color);
+            color:var(--primary-color);
+            font-family: 'Open Sans', sans-serif;
+
+            
+        }
+        p{
+            font-weight: 20px;
+        }
+       
+        .container{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        
+        .div2{
+            width: 300px;
+            margin-top: 50px;
+            transition: 2s;
+        }
+        .div2:hover{
+            transform: translate(100px,50px);
+        }
+    .div2 img{
+        width: 100%;
+        border-radius: 50%;
+        border: 2px solid greenyellow;
+        box-shadow: 3px 3px 3px white;
+        
+                
+        
+        
+    }
+    .div1{
+        margin-top: 80px;
+        margin-left: 80px;
+    }
+    .div1 img{
+        width: 30px;
+    }
+    .div1 h1 span{
+        color: red;
+        font-size: 50px;
+    }
+    .div1 p span{
+        font-size: 30px;
+        color: royalblue;
+        text-transform: uppercase;
+        margin-left: 5px;
+    }
+    .div3{
+        margin-top: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    hr{
+        width: 25%;
+        margin-left: 38%;
+
+    }
+    .div3 p{
+        margin-top: 20px;
+        text-align: justify;
+        padding: 5px;
+    }
+    .div4 {
+text-align: center;
+text-transform: uppercase;
+margin-top: 30px;
+    }
+    .div5{
+        width: 300px;
+        
+        
+        transition: 2s;
+        cursor: pointer;
+    }
+    .div5 img{
+        width: 100%;
+        transition: 2s ease-in-out;
+    }
+    .conatainer1{
+        margin-top: 50px;
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        
+    }
+    
+    .div6{
+        margin: 2px;
+        width: 300px;
+        visibility: hidden;
+
+    }
+    .div6 h1{
+        text-align: center;
+
+    }
+    .div6 p{
+        margin: 2px;
+        text-align: justify;
+    }
+    .div5:hover{
+        box-shadow: 6px 6px 6px red;
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+  
+   .div5:hover .div6 {
+     visibility: visible;
+    
+       
+   }
+   .div7{
+       text-align: center;
+       margin-top: 30px;
+       text-transform: uppercase;
+   }
+   .vectorimg{
+       width: 400px;
+    
+       
+
+   }
+.vectorimg img{
+    width: 100%;
+    margin-left: 40px;
+
+}
+.conatiner2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 3px;
+    margin-top: 30px;
+    
+}
+.vectorparagraph p{
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+.vectorparagraph p:hover{
+    
+    box-shadow: 4px 4px 4px gray;
+}
+.get{
+    margin-top: 30px;
+    text-align: center;
+
+}
+.get h1{
+
+
+}
+.form{
+    text-align: center;
+    margin-top: 40px;
+    border: 2px solid gray;
+    margin: 20px;
+    box-shadow: 2px 2px 2px red;
+    
+
+}
+.form label{
+    padding: 5px;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+
+}
+.form input{
+    padding: 5px;
+    width: 60%;
+    border: none;
+    border-bottom: 2px solid gray;
+    box-shadow: 2px 2px 2px red;
+}
+    input::placeholder{
+        color: white;
+        letter-spacing: 2px;
+    }
+    form button{
+        margin: 10px;
+        width: 20%;
+        height: 30px;
+        font-weight: bold;
+        background-color: red;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.5s ease-in-out;
+    }
+    form button:hover{
+        transform: scale(1.1);
+        box-shadow: 2px 2px 2px gray;
+    }
+    .contact{
+        text-align: center;
+        text-transform: capitalize;
+        margin-top: 30px;
+    }
+    .social{
+        padding: 20px;
+    }
+    .social button{
+    padding: 10px;
+    margin: 5px;
+        font-size: 50px;
+        border: 3px solid gray;
+        transition: 0.5s ease-in-out;
+        
+    }
+    .social button:hover{
+        background: red;
+        transform: scale(1.1);
+        box-shadow: 3px 3px 3px green;
+    }
+    .skill{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .skill-container{
+            
+            
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .skill-container>div{
+            margin: 30px;
+        }
+
+        .skill-container li{
+            list-style-type: none;
+            margin: 50px 0;
+            font-weight: bolder;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .skill-container li::before{
+
+            content: '';
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+
+
+            background-color: rgb(170,167,173);
+            width: 100%;
+            height: 25px;
+            border-radius: 1000px;
+        }
+
+
+        .skill-container li::after{
+
+            content: '';
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+
+
+            background-color: rgb(249,249,250);
+            width: 0;
+            height: 25px;
+            border-radius: 1000px;
+
+
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: 1s;
+            /* animation-iteration-count: 3; */
+            /* animation-direction: forward; */
+            animation-fill-mode: forwards;
+        }
+
+        .skill-container li.html::after{
+            animation-name: html;
+        }
+
+        @keyframes html{
+            to{
+                width: 90%;
+                background-color: orange;
+            }
+        }
+
+        .skill-container li.css::after{
+            animation-name: css;
+        }
+
+        @keyframes css{
+            to{
+                width: 80%;
+                background-color: orangered;
+            }
+        }
+        .skill-container li.js::after{
+            animation-name:js;
+        }
+
+        @keyframes js{
+            to{
+                width: 75%;
+                background-color: red;
+            }
+        }
+        .skill-container li.bs::after{
+            animation-name:bs;
+        }
+
+        @keyframes bs{
+            to{
+                width:85%;
+                background-color: rgb(0, 255, 0);
+            }
+        }
+        .skill-container li.java::after{
+            animation-name:java;
+        }
+
+        @keyframes java{
+            to{
+                width: 88%;
+                background-color: rgb(255, 0, 106);
+            }
+        }
+        .skill-container li.Photoshop::after{
+            animation-name:Photoshop;
+        }
+
+        @keyframes Photoshop{
+            to{
+                width: 78%;
+                background-color: rgb(195, 0, 255);
+            }
+        }
+        .font{
+            padding: 30px;
+            text-align: center;
+            
+        }
+        .font i{
+            font-size: 80px;
+            display: block;
+            color: gray;
+            padding: 10px;
+            transition: 1s ;
+            cursor: pointer;
+        }
+        .font i:hover{
+            transform: scale(1.2);
+            
+        
+        }
+        @media only screen and (max-width: 600px){
+           
+           .container{
+               display: grid;
+               grid-template-columns: 100%;
+               padding: 0px;
+           }
+           .div1 p span{
+               font-size: 15px;
+           }
+           .div2 {
+               margin-left: 30%;
+               
+           }
+           .skill-container{
+               display: grid;
+               grid-template-columns: auto;
+           }
+           .skill-container>div{
+
+           }
+           .skill{
+               text-align: center;
+           }
+           .conatainer1{
+               display: grid;
+               grid-template-columns: auto;
+           }
+       .conatiner2{
+        display: grid;
+               grid-template-columns: auto;
+       }
+       .form label{
+           font-size: 10px;
+       }
+        input::placeholder{
+        color: white;
+        font-size: 8px;
+            }
+       }
+       .social button{
+    padding: 5px;
+    margin: 5px;
+        font-size: 40px;
+        border: 3px solid gray;
+        transition: 0.5s ease-in-out;
+        
+    }
+    .skill-container>div{
+            margin: 10px;
+        }
+        .div2:hover{
+            transform: translate(30px,20px);
+        }
+   .conatainer1>div{
+
+align-items: center;
+
+   }}
+  
+        
+        
+        
+
+        
+
+    
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="div1">
+        <img src="2165_R1NUIENBTSA0NDgtMDQ-removebg-preview.png" id="icon">
+        <h1>Hi my name is <span>Riead Hossain Rabbi</span> </h1>
+        <p>I am professional <span> web desginer</span></p>
+        <p>I am professional <span> Grapics desginer</span> </p>
+        <p><i class="fas fa-phone-alt"><span class="mobile">01749813387/01931802221</span></i> </p>
+    </div>
+    <div class="div2">
+        <img src="rabbi.jpg">
+    </div>
+    </div>
+    <div>
+        <div class="div3">
+            <h1 >About me</h1>
+            <hr>
+            <div>
+                <p>
+                    Tempor diam dolor kasd lorem consetetur takimata sadipscing amet dolore. Est sit labore ut dolor lorem sea et diam stet. Sed diam rebum lorem est. Lorem rebum sit duo est eirmod justo. Stet nonumy magna invidunt dolore no sit sed eos nonumy, consetetur ipsum amet sed consetetur justo consetetur dolor sea nonumy, clita et justo aliquyam diam amet labore eirmod diam aliquyam. Lorem ipsum stet ut eos. Et tempor eos kasd ut at sanctus nonumy, sit sadipscing sed sadipscing et justo magna vero eirmod. Et aliquyam diam erat dolore sed. Et vero sit dolor tempor sit sed eirmod accusam est,.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="skill">
+        <h1>Skills</h1><hr>
+
+
+    </div>
+    <div class="skill-container">
+        <div>
+        <ul>
+
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="js">JS</li>
+            <li class="bs">Bootstrap</li>
+            <li class="java">Java</li>
+            <li class="Photoshop">Photoshop</li>
+                
+        </ul></div>
+        <div class="font">
+            <i class="fab fa-html5">html</i>
+            <i class="fab fa-css3-alt">css</i>
+            <i class="fab fa-java">java</i>
+            <i class="fab fa-js">javascript</i>
+            <i class="fab fa-bootstrap">Bootstrap</i>
+            
+        </div>
+    </div>
+    <div class="div4">
+        <h1>projects
+        </h1><hr>
+    </div>
+   <div class="conatainer1">
+       <div class="div5">
+           <img src="topitltd.PNG" alt="image not found">
+           <div class="div6">
+               <h1> Grapics designer</h1>
+        <p>Duo labore diam eos sed lorem dolore, kasd stet dolor accusam ea aliquyam lorem sed et, amet ea ipsum et sadipscing dolores sed tempor, amet ipsum sadipscing dolor et et.</p>
+
+           </div>
+       </div>
+       <div class="div5">
+        <img src="topitltd.PNG" alt="image not found">
+        <div class="div6">
+            <h1> Grapics designer</h1>
+     <p>Duo labore diam eos sed lorem dolore, kasd stet dolor accusam ea aliquyam lorem sed et, amet ea ipsum et sadipscing dolores sed tempor, amet ipsum sadipscing dolor et et.</p>
+
+        </div>
+    </div>
+    <div class="div5">
+        <img src="topitltd.PNG" alt="image not found">
+        <div class="div6">
+            <h1> Grapics designer</h1>
+     <p>Duo labore diam eos sed lorem dolore, kasd stet dolor accusam ea aliquyam lorem sed et, amet ea ipsum et sadipscing dolores sed tempor, amet ipsum sadipscing dolor et et.</p>
+
+        </div>
+    </div>
+    <div class="div5">
+        <img src="topitltd.PNG" alt="image not found">
+        <div class="div6">
+            <h1> Grapics designer</h1>
+     <p>Duo labore diam eos sed lorem dolore, kasd stet dolor accusam ea aliquyam lorem sed et, amet ea ipsum et sadipscing dolores sed tempor, amet ipsum sadipscing dolor et et.</p>
+
+        </div>
+    </div>
+</div>
+<div class="div7">
+    <h1> Exprineces</h1><hr>
+</div>
+<div class="conatiner2">
+   <div class="vectorimg">
+       <img src="vector-free-web-business-icons-removebg-preview.png">
+   </div>
+<div class="vectorparagraph">
+    <p>Dolor amet stet dolor nonumy magna ipsum. Amet duo justo dolor rebum elitr, aliquyam ut accusam dolores invidunt dolor et ut eos clita, est diam dolore et kasd. Elitr labore lorem justo sit eirmod, kasd dolores rebum accusam stet sed. Sed sanctus clita et sea eos sit, amet dolor eos erat lorem consetetur sed. Sadipscing sit sed et dolore sadipscing. Labore justo ut elitr magna accusam. Invidunt at sanctus voluptua est sanctus dolor et takimata, clita diam ipsum sed sadipscing stet justo, voluptua sit elitr rebum sea sit ut elitr sadipscing et. Et eos dolor amet tempor elitr. Sea erat.</p>
+</div>
+
+
+</div>  
+<div class=" get"> 
+    <h1>Get in touch with me </h1><hr>
+  
+</div>
+<div>
+    <Form class="form">
+<label >Email address:</label>
+<input type="email" placeholder="enter your email"><br>
+<label >subject:</label>
+<input type="text" placeholder="enter what your subject"><br>
+<label >body:</label>
+<input type="text" placeholder="enter what you want to know"><br>
+<button>submit</button>
+
+
+
+
+    </Form>
+</div>
+<div class="contact"><h1>contact me</h1><hr>
+
+<div class="social">
+    <button><i class="fab fa-facebook-square"></i></button>
+    <button><i class="fab fa-twitter-square"></i></button>
+    <button><i class="fab fa-linkedin-in"></i></button>
+    <button><i class="fab fa-whatsapp-square"></i></button>
+
+</div>
+</div>
+<script>
+var icon=document.getElementById("icon");
+ icon.onclick=function(){
+ document.body.classList.toggle("dark-thame");
+ if(document.body.classList.contains("dark-thame")){
+     icon.src="sun2.png";
+ }
+ else{
+     icon.src="2165_R1NUIENBTSA0NDgtMDQ-removebg-preview.png";
+ }
+
+}
+</script>
+
+    
+</body>
+
+</html>
